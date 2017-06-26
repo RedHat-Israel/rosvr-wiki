@@ -1,0 +1,15 @@
+script:
+- |
+  git config user.name "ROSVR travis"
+  git config user.email "abraverm@redhat.com"
+  git remote remove origin
+  git remote add origin https://$GITHUB_API_KEY@github.com/RedHat-Israel/rosvr-wiki.git > /dev/null 2>&1
+  git remote add upstream https://$GITHUB_API_KEY@github.com/RedHat-Israel/rosvr.wiki.git > /dev/null 2>&1
+  git fetch origin
+  git fetch upstream
+  git merge upstream/master --no-edit
+  git push origin HEAD:master > /dev/null 2>&1
+  git push upstream HEAD:master > /dev/null 2>&1
+env:
+  matrix:
+    secure: tXvVKMBaeS0Zrtui5uDnIvfTmi7OwjI5Mv78sPQB9caIS0OvlBrPrYYaCqjCQPUszyz23WmvDPX4DidG37zc5qeJACcHznWVOsuvYRKa/TcrppHZ+J4l+5clVYHk6plhPvmMzChoUne7A+Vz6lA601PztkEkUbMHTtz6DImZaLjlUrmsjroYPDuZKUTmM2cAr2R1g0xtR7oIgRVxq8O9P9D3pAQhL69ivIAEBFa63R53GDAsk50r5sNJW3JokuVULCKw4um/K1F1Pvb4an3xPz6C5Gj1SNmucOi8n54kvnkAg02TCvtP3xJV+ySzMahvcuj1p0KZflfJFQiv1uNTP3kWA5VNq6UtKw+8H/qabaVGaN8piEShy8pkgfm6xiellQhCcslKvTdrmPMFo8E5OpEfOPsHrr/k/kS2ME5UxuglZCI7JkPJjjfdQN67XKO4d9zxhWSM1Kz3+naUk+8XQnLjTAGIunhgi0EVcdgj8H6ha8wy/gvwlmbx3rxPJyfS8WtT4TH78DU0ZgDjkooGodYnfhVZ6tph2pmGq3QPXY9X3KqgFJa7EtDGu9c0/UjhWb66mGaPoIcHa/MYy8IVxX2Oi2afXxSfpEwe/W5SSZVxNxDca2sjZ1qIQACSNiZWQepeBPLzUPyDCk5TP8ZZ6eIMsUYiwAgNJWQ7JYN44SI=
