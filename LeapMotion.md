@@ -21,7 +21,8 @@ sudo dnf install rpm-build rpm-build-libs
 ````
 please note that the generated rpm arch is the same of your os (32 bit os will generate a 32-bit rpm file)
 ````
-git clone git@github.com:atejeda/leap-fedora-rpm.git
+git clone git@github.com:atejeda/leap-fedora-rpm.git # via https
+git clone git@github.com:atejeda/leap-fedora-rpm.git # via ssh
 mv LeapDeveloperKit_*_linux/*.deb leap-fedora-rpm/SOURCES/
 cd leap-fedora-rpm
 make clean all
