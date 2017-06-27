@@ -1,5 +1,5 @@
 # LeapMotion #
-...
+LeapMotion is a small device that tracks hands and can display them in Unity
 ## Driver Installation ##
 To use LeapMotion on linux you'll need to install some drivers
 
