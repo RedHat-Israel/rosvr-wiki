@@ -28,4 +28,8 @@ cd leap-fedora-rpm
 make clean all
 sudo dnf install RPMS/*/Leap*.rpm
 ````
-
+## Testing ##
+After installing the drivers, you can test the LeapMotion by the `Visualizer` Utility:
+````
+Visualizer
+````
