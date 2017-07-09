@@ -51,9 +51,9 @@ after downloading the assets, import them to Unity (`Open` and then select the f
 cd to the directory with the unzipped folder (that had the `.deb` files) and run the following commands (where <unity project root> is the directory of your cloned unity project):
 ````
 cp LeapDeveloperKit_2.3.1+31549_linux/LeapSDK/lib/x86/libLeap.so <unity project root>/Assets/Plugins/x86/
-cp LeapDeveloperKit_2.3.1+31549_linux/LeapSDK/lib/x64/libLeap.so <unity project root>/Assets/Plugins/x64/
+cp LeapDeveloperKit_2.3.1+31549_linux/LeapSDK/lib/x64/libLeap.so <unity project root>/Assets/Plugins/x86_64/
 cp LeapDeveloperKit_2.3.1+31549_linux/LeapSDK/lib/x86/libLeapCSharp.so <unity project root>/Assets/Plugins/x86/
-cp LeapDeveloperKit_2.3.1+31549_linux/LeapSDK/lib/x64/libLeapCSharp.so <unity project root>/Assets/Plugins/x64/
+cp LeapDeveloperKit_2.3.1+31549_linux/LeapSDK/lib/x64/libLeapCSharp.so <unity project root>/Assets/Plugins/x86_64/
 ````
 ### Running an example ###
 In Unity, enter the LeapMotion folder and then to the Scenes folder. open a scene and press the Play button, put your hands above the LeapMotion and you should see them in Unity!
