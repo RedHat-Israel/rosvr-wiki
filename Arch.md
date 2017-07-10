@@ -1,4 +1,3 @@
-# Welcome to the ROSVR wiki!
-
 ## ROSRV Stack Diagram
 ![Architecture](ROSVR-Stack.png)
+
