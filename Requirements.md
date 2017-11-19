@@ -1,14 +1,10 @@
-Requirements -
+# Requirements
 
-release 0.01:
+*Release 0.0.1*
 
-jdk -  Java SE Development Kit 8u131
-
-sdk - 25.2.5
-
-ndk - 10re
-
-Unity - 5.6.0f3
-
-google sdk for unity - 1.6
-
+- Java SE Development Kit (JDK)- 8u131
+- Android SDK - 25.2.5
+- Android NDK - 10re
+- Unity - 5.6.0f3
+- Google SDK for Unity - 1.6
+- LeapMotion SDK V2 - 2.3.1
